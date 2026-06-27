@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="yandex-verification" content="enumsswap2025org" />
+  <meta name="msvalidate.01" content="ENUMSSWAP2025VALIDATION" />
+  <meta name="google-site-verification" content="enums-swap-google-verify-2025" />
+
+  <!-- ═══════════ PRIMARY SEO ═══════════ -->
+  <title>Enums Swap – TRON DEX for Token Swap, Staking, Borrow &amp; Credit | enums-swap.vercel.app</title>
+  <meta name="description" content="Enums Swap is a non-custodial DeFi hub on TRON. Swap TRC-20 tokens at the best rate, stake ENUM for yield, borrow against your collateral, provide liquidity and unlock credit — all in one MEV-protected platform, zero KYC." />
+  <meta name="keywords" content="Enums Swap, ENUM token, ENUM swap, TRON DEX, TRC20 swap, ENUM staking, TRON staking, ENUM borrow, ENUM credit, TRON liquidity pool, TRON bridge, swap TRX, TRON DeFi, ENUM yield, enums-swap.vercel.app, ENUM exchange, TRON lending, non-custodial swap" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://enums-swap.vercel.app/" />
+  <meta name="author" content="Enums Swap – enums-swap.vercel.app" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Enums Swap – TRON DeFi Hub: Swap, Stake, Borrow, Earn" />
+  <meta property="og:description" content="Swap, stake, borrow and earn on TRON with Enums Swap. Best rates, MEV-protected, non-custodial. Zero KYC, instant settlement." />
+  <meta property="og:url" content="https://enums-swap.vercel.app/" />
+  <meta property="og:site_name" content="Enums Swap" />
+  <meta property="og:image" content="https://enums-swap.vercel.app/og.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Enums Swap – Swap, Stake &amp; Borrow on TRON" />
+  <meta name="twitter:description" content="The non-custodial DeFi hub for TRON: swap, stake, borrow, pool and credit, all in one interface." />
+  <meta name="twitter:image" content="https://enums-swap.vercel.app/og.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Enums Swap",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "url": "https://enums-swap.vercel.app/",
+    "description": "Enums Swap is a non-custodial DeFi platform on TRON offering token swaps, staking, borrowing, cross-chain bridging, liquidity pools, and on-chain credit.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is Enums Swap?", "acceptedAnswer": { "@type": "Answer", "text": "Enums Swap is a non-custodial DeFi platform built on TRON that lets users swap, stake, borrow, bridge and earn yield with ENUM and other TRC-20 tokens across 30+ blockchain networks." } },
+      { "@type": "Question", "name": "How do I swap tokens on Enums Swap?", "acceptedAnswer": { "@type": "Answer", "text": "Connect your TronLink wallet, select the token you want to swap from and to, review the quoted rate, and confirm the transaction. TRON finality is under 3 seconds." } },
+      { "@type": "Question", "name": "How do I stake ENUM on Enums Swap?", "acceptedAnswer": { "@type": "Answer", "text": "Open the Staking tab, connect your wallet, enter the amount of ENUM you want to stake, choose a lock period, and confirm. Rewards accrue in real time." } }
+    ]
+  }
+  </script>
+
+  <!-- Favicon SVG — custom Enums Swap mark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23121432'/%3E%3Cstop offset='1' stop-color='%23080919'/%3E%3C/linearGradient%3E%3ClinearGradient id='ac' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236c5ce7'/%3E%3Cstop offset='1' stop-color='%2300e5c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23bg)'/%3E%3Cpolygon points='32,10 54,22 54,42 32,54 10,42 10,22' fill='none' stroke='url(%23ac)' stroke-width='2.8'/%3E%3Cpath d='M24 21h16v5H29v5h10v5H29v6h11v5H24z' fill='url(%23ac)'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg:      #060712;
+      --bg2:     #0b0e1f;
+      --bg3:     #10142b;
+      --surface: rgba(255,255,255,.035);
+      --b1:      rgba(108,92,231,.20);
+      --b2:      rgba(255,255,255,.07);
+      --violet:  #6c5ce7;
+      --indigo:  #8a7bff;
+      --cyan:    #00e5c9;
+      --gold:    #ffc107;
+      --text:    #edeffb;
+      --muted:   #707ca3;
+      --fh:      'Outfit', sans-serif;
+      --fm:      'JetBrains Mono', monospace;
+      --r:       14px;
+      --glow-o:  0 0 50px rgba(108,92,231,.22), 0 0 100px rgba(0,229,201,.1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--fh);
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* Snow / particles */
+    #snow-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: .3; }
+
+    /* BG */
+    .bg-mesh {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 65% 50% at 8% 18%, rgba(108,92,231,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 55% at 92% 82%, rgba(0,229,201,.1) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 55% 45%, rgba(255,193,7,.04) 0%, transparent 55%);
+    }
+    .bg-lines {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(108,92,231,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(108,92,231,.025) 1px, transparent 1px);
+      background-size: 52px 52px;
+    }
+    .bg-hex {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      opacity: .03;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52'%3E%3Cpolygon points='30,2 58,17 58,47 30,52 2,47 2,17' fill='none' stroke='%236c5ce7' stroke-width='1'/%3E%3C/svg%3E");
+      background-size: 60px 52px;
+    }
+
+    /* ── LAYOUT ── */
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    section { position: relative; z-index: 1; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 200;
+      backdrop-filter: blur(24px) saturate(180%);
+      background: rgba(6,7,18,.92);
+      border-bottom: 1px solid var(--b1);
+    }
+    .nav-row { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--fh); font-weight: 900; font-size: 1.28rem; letter-spacing: -.03em;
+    }
+    .logo-icon { width: 34px; height: 34px; }
+    .logo .b { color: var(--violet); }
+    .logo .t { color: var(--cyan); }
+    .logo .s { color: var(--text); opacity: .85; }
+
+    nav a {
+      font-family: var(--fm); font-size: .71rem; letter-spacing: .04em;
+      color: var(--muted); padding: 7px 13px; border-radius: 8px;
+      transition: color .2s, background .2s;
+    }
+    nav a:hover { color: var(--cyan); background: rgba(0,229,201,.07); }
+    nav { display: flex; align-items: center; gap: 2px; }
+
+    .btn-connect {
+      font-family: var(--fh); font-weight: 700; font-size: .79rem;
+      letter-spacing: .04em; text-transform: uppercase;
+      padding: 9px 20px; border-radius: 10px; border: none; cursor: pointer;
+      background: linear-gradient(135deg, var(--violet), var(--cyan));
+      color: #fff; box-shadow: 0 0 18px rgba(108,92,231,.35);
+      transition: transform .15s, box-shadow .2s;
+    }
+    .btn-connect:hover { transform: translateY(-2px); box-shadow: 0 0 34px rgba(108,92,231,.6); }
+
+    /* ── HERO ── */
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 0 80px; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 1.12fr; gap: 56px; align-items: center; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--fm); font-size: .68rem; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--cyan); background: rgba(0,229,201,.09); border: 1px solid rgba(0,229,201,.25);
+      padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+    }
+    .hero-badge::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--cyan); animation:pulse-dot 2s infinite; }
+
+    .hero h1 {
+      font-weight: 900; font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.03; letter-spacing: -.04em; margin-bottom: 20px;
+    }
+    .h-o { color: var(--violet); }
+    .h-a { color: var(--cyan); }
+    .h-g {
+      background: linear-gradient(90deg, var(--violet), var(--cyan));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+    .hero p { font-size: 1.03rem; color: var(--muted); max-width: 460px; line-height: 1.8; margin-bottom: 34px; }
+
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 46px; }
+    .btn-main {
+      font-family: var(--fh); font-weight: 700; font-size: .88rem;
+      letter-spacing: .04em; text-transform: uppercase;
+      padding: 13px 28px; border-radius: var(--r); border: none; cursor: pointer;
+      background: linear-gradient(135deg, var(--violet), var(--cyan));
+      color: #fff; box-shadow: var(--glow-o);
+      transition: transform .15s, box-shadow .2s;
+    }
+    .btn-main:hover { transform: translateY(-3px); box-shadow: 0 0 60px rgba(108,92,231,.55); }
+    .btn-ghost {
+      font-family: var(--fh); font-weight: 600; font-size: .88rem;
+      letter-spacing: .04em; text-transform: uppercase;
+      padding: 12px 26px; border-radius: var(--r); cursor: pointer;
+      background: transparent; color: var(--text); border: 1px solid var(--b2);
+      transition: border-color .2s, color .2s, background .2s;
+    }
+    .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,229,201,.05); }
+
+    .hero-kpis { display: flex; gap: 16px; flex-wrap: wrap; }
+    .kpi {
+      padding: 14px 20px; background: var(--surface); border: 1px solid var(--b2); border-radius: 12px;
+      min-width: 108px;
+    }
+    .kpi-n { font-weight: 900; font-size: 1.5rem; letter-spacing: -.03em; color: var(--cyan); }
+    .kpi-l { font-family: var(--fm); font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+
+    /* ── DeFi WIDGET CARD ── */
+    .defi-card {
+      background: var(--bg2); border: 1px solid var(--b1); border-radius: 26px;
+      padding: 0; box-shadow: var(--glow-o);
+      position: relative; overflow: hidden;
+      animation: float-anim 7s ease-in-out infinite;
+    }
+    .defi-card::before {
+      content:''; position:absolute; inset:-1px; border-radius:27px;
+      background: linear-gradient(135deg, rgba(108,92,231,.18), rgba(0,229,201,.12), transparent 60%);
+      z-index:-1;
+    }
+
+    /* Tab nav */
+    .tab-nav { display: flex; border-bottom: 1px solid var(--b2); padding: 0 4px; overflow-x: auto; }
+    .tab-btn {
+      font-family: var(--fm); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 14px 14px 13px; background: transparent; border: none; cursor: pointer;
+      color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px;
+      transition: color .2s, border-color .2s;
+      display: flex; align-items: center; gap: 6px; white-space: nowrap;
+    }
+    .tab-btn.active { color: var(--cyan); border-bottom-color: var(--cyan); }
+    .tab-btn:hover:not(.active) { color: var(--text); }
+    .tab-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; opacity: .6; }
+
+    .tab-pane { display: none; padding: 22px 24px 24px; }
+    .tab-pane.active { display: block; }
+
+    /* Swap pane */
+    .sc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+    .sc-title { font-weight: 800; font-size: 1.05rem; letter-spacing: -.02em; }
+    .sc-chain-pills { display: flex; gap: 5px; }
+    .cpl {
+      font-family: var(--fm); font-size: .63rem; padding: 4px 10px;
+      border-radius: 100px; border: 1px solid var(--b2); color: var(--muted);
+      cursor: pointer; background: transparent; transition: border-color .2s, color .2s;
+    }
+    .cpl.active, .cpl:hover { border-color: var(--cyan); color: var(--cyan); }
+
+    /* token rows */
+    .token-row {
+      background: var(--bg3); border: 1px solid var(--b2); border-radius: 14px;
+      padding: 15px 17px; margin-bottom: 8px;
+    }
+    .tr-label { font-family: var(--fm); font-size: .63rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    .tr-inner { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+
+    .tok-select {
+      display: flex; align-items: center; gap: 9px;
+      background: var(--surface); border: 1px solid var(--b2); border-radius: 10px;
+      padding: 9px 13px; cursor: pointer; min-width: 136px;
+      transition: border-color .2s;
+    }
+    .tok-select:hover { border-color: var(--cyan); }
+    .tok-ico { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .8rem; flex-shrink: 0; overflow: hidden; }
+    .tok-ico img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+    .tok-info .sym { font-weight: 700; font-size: .88rem; }
+    .tok-info .net { font-family: var(--fm); font-size: .61rem; color: var(--muted); }
+    .tok-caret { margin-left: auto; color: var(--muted); font-size: .66rem; }
+
+    .tok-amount {
+      background: transparent; border: none; outline: none;
+      font-family: var(--fh); font-weight: 800; font-size: 1.5rem;
+      color: var(--text); text-align: right; width: 100%; letter-spacing: -.02em;
+    }
+    .tok-amount::placeholder { color: rgba(255,255,255,.15); }
+
+    .tr-sub {
+      display: flex; justify-content: space-between; margin-top: 7px;
+      font-family: var(--fm); font-size: .66rem; color: var(--muted);
+    }
+    .connect-notice {
+      font-family: var(--fm); font-size: .64rem; color: rgba(0,229,201,.6);
+      font-style: italic;
+    }
+
+    /* arrow switch */
+    .sc-arrow { display: flex; justify-content: center; padding: 2px 0; }
+    .sc-arrow-btn {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--violet), var(--cyan));
+      border: 3px solid var(--bg2); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 16px rgba(108,92,231,.3); transition: transform .35s;
+    }
+    .sc-arrow-btn:hover { transform: rotate(180deg); }
+    .sc-arrow-btn svg { color: #fff; }
+
+    /* info rows */
+    .sc-info { padding: 8px 0 2px; }
+    .sc-info-row {
+      display: flex; justify-content: space-between;
+      font-family: var(--fm); font-size: .7rem; color: var(--muted); padding: 3px 0;
+    }
+    .sc-info-row .v { color: var(--cyan); }
+
+    /* slippage */
+    .slippage-row { display: flex; gap: 6px; margin: 11px 0; }
+    .slip-btn {
+      font-family: var(--fm); font-size: .67rem; padding: 5px 11px;
+      border-radius: 7px; border: 1px solid var(--b2); background: transparent;
+      color: var(--muted); cursor: pointer; transition: all .2s;
+    }
+    .slip-btn.active, .slip-btn:hover { background: rgba(0,229,201,.1); border-color: var(--cyan); color: var(--cyan); }
+
+    .btn-swap-now {
+      width: 100%; padding: 15px;
+      font-family: var(--fh); font-weight: 800; font-size: .93rem;
+      letter-spacing: .05em; text-transform: uppercase;
+      background: linear-gradient(135deg, var(--violet), var(--cyan));
+      color: #fff; border: none; border-radius: 14px; cursor: pointer;
+      box-shadow: 0 4px 24px rgba(108,92,231,.28);
+      transition: transform .15s, box-shadow .2s; margin-top: 6px;
+    }
+    .btn-swap-now:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(108,92,231,.5); }
+
+    .sc-footer { display: flex; justify-content: center; gap: 16px; margin-top: 11px; font-family: var(--fm); font-size: .63rem; color: var(--muted); }
+    .sc-footer span { display: flex; align-items: center; gap: 4px; }
+    .sc-footer span::before { content: '✓'; color: var(--cyan); }
+
+    /* ── STAKING PANE ── */
+    .stake-info-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 18px; }
+    .stake-info-box {
+      background: var(--bg3); border: 1px solid var(--b2); border-radius: 12px;
+      padding: 14px 14px 12px; text-align: center;
+    }
+    .sib-val { font-weight: 800; font-size: 1.1rem; color: var(--cyan); }
+    .sib-lbl { font-family: var(--fm); font-size: .6rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-top: 3px; }
+
+    .lock-options { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin: 12px 0; }
+    .lock-btn {
+      font-family: var(--fm); font-size: .66rem; padding: 8px 4px;
+      border-radius: 8px; border: 1px solid var(--b2); background: transparent;
+      color: var(--muted); cursor: pointer; text-align: center; transition: all .2s;
+    }
+    .lock-btn small { display: block; font-size: .58rem; color: var(--cyan); margin-top: 2px; opacity: 0; transition: opacity .2s; }
+    .lock-btn.active, .lock-btn:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,229,201,.08); }
+    .lock-btn.active small, .lock-btn:hover small { opacity: 1; }
+
+    /* ── BORROW / BRIDGE-STYLE PANE ── */
+    .bridge-chain-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+    .bridge-chain-sel {
+      flex: 1; background: var(--bg3); border: 1px solid var(--b2); border-radius: 12px;
+      padding: 12px 14px; cursor: pointer; transition: border-color .2s;
+    }
+    .bridge-chain-sel:hover { border-color: var(--cyan); }
+    .bcs-lbl { font-family: var(--fm); font-size: .6rem; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+    .bcs-val { font-weight: 700; font-size: .9rem; display: flex; align-items: center; gap: 7px; }
+    .chain-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .bridge-arrow-btn {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--violet), var(--cyan));
+      border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: transform .3s;
+    }
+    .bridge-arrow-btn:hover { transform: rotate(180deg); }
+
+    /* ── POOL PANE ── */
+    .pool-list { display: flex; flex-direction: column; gap: 8px; }
+    .pool-item {
+      background: var(--bg3); border: 1px solid var(--b2); border-radius: 12px;
+      padding: 14px 16px; display: flex; align-items: center; justify-content: space-between;
+      transition: border-color .2s;
+    }
+    .pool-item:hover { border-color: rgba(0,229,201,.3); }
+    .pool-left { display: flex; align-items: center; gap: 10px; }
+    .pool-icons { display: flex; }
+    .pi { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .75rem; overflow: hidden; }
+    .pi img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+    .pi:nth-child(2) { margin-left: -6px; border: 2px solid var(--bg3); }
+    .pool-name { font-weight: 700; font-size: .88rem; }
+    .pool-tvl { font-family: var(--fm); font-size: .63rem; color: var(--muted); }
+    .pool-apy { font-family: var(--fm); font-size: .78rem; color: #4ade80; font-weight: 700; }
+
+    /* ── CREDIT PANE ── */
+    .credit-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+    .credit-stat {
+      background: var(--bg3); border: 1px solid var(--b2); border-radius: 12px;
+      padding: 14px; text-align: center;
+    }
+    .cs-val { font-weight: 800; font-size: 1.1rem; color: var(--cyan); }
+    .cs-lbl { font-family: var(--fm); font-size: .6rem; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+    .collateral-bar { background: var(--bg3); border: 1px solid var(--b2); border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; }
+    .cbar-label { font-family: var(--fm); font-size: .63rem; color: var(--muted); margin-bottom: 8px; display: flex; justify-content: space-between; }
+    .cbar-track { height: 6px; background: rgba(255,255,255,.07); border-radius: 3px; }
+    .cbar-fill { height: 6px; border-radius: 3px; background: linear-gradient(90deg, var(--violet), var(--cyan)); width: 0; }
+
+    .btn-action-full {
+      width: 100%; padding: 13px;
+      font-family: var(--fh); font-weight: 700; font-size: .86rem;
+      letter-spacing: .04em; text-transform: uppercase;
+      background: linear-gradient(135deg, var(--violet), var(--cyan));
+      color: #fff; border: none; border-radius: 12px; cursor: pointer;
+      transition: transform .15s, box-shadow .2s;
+    }
+    .btn-action-full:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(108,92,231,.4); }
+    .btn-action-ghost {
+      width: 100%; padding: 12px;
+      font-family: var(--fh); font-weight: 600; font-size: .84rem;
+      letter-spacing: .04em; text-transform: uppercase;
+      background: transparent; color: var(--text); border: 1px solid var(--b2); border-radius: 12px; cursor: pointer;
+      transition: border-color .2s, color .2s; margin-top: 8px;
+    }
+    .btn-action-ghost:hover { border-color: var(--cyan); color: var(--cyan); }
+
+    .wallet-notice {
+      background: rgba(0,229,201,.06); border: 1px solid rgba(0,229,201,.18);
+      border-radius: 10px; padding: 10px 14px; margin-top: 12px;
+      font-family: var(--fm); font-size: .66rem; color: rgba(0,229,201,.75); text-align: center;
+    }
+
+    /* ── TICKER ── */
+    .ticker-wrap { border-top: 1px solid var(--b1); border-bottom: 1px solid var(--b1); background: rgba(9,10,22,.9); overflow: hidden; padding: 10px 0; }
+    .ticker-track { display: flex; gap: 52px; width: max-content; animation: ticker-run 36s linear infinite; }
+    .t-i { display: flex; align-items: center; gap: 7px; font-family: var(--fm); font-size: .73rem; color: var(--muted); white-space: nowrap; }
+    .t-i .d { width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); }
+    .t-i .v { color: var(--cyan); }
+    .up { color: #4ade80; }
+    .dn { color: #f87171; }
+
+    /* ── GENERIC SECTION ── */
+    .sec { padding: 90px 0; }
+    .sec-lbl { font-family: var(--fm); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); margin-bottom: 10px; }
+    .sec-h { font-weight: 900; font-size: clamp(1.9rem, 3.5vw, 2.8rem); line-height: 1.06; letter-spacing: -.04em; margin-bottom: 14px; }
+    .sec-sub { font-size: .96rem; color: var(--muted); max-width: 540px; line-height: 1.78; }
+    .sec-center { text-align: center; }
+    .sec-center .sec-sub { margin: 0 auto; }
+
+    /* ── FEATURES ── */
+    .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 52px; }
+    .feat {
+      background: var(--bg2); border: 1px solid var(--b2); border-radius: 18px;
+      padding: 28px 24px; transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+    .feat:hover { border-color: rgba(108,92,231,.35); transform: translateY(-5px); box-shadow: 0 12px 32px rgba(108,92,231,.1); }
+    .feat-ico { font-size: 2rem; margin-bottom: 16px; }
+    .feat h3 { font-weight: 700; font-size: 1rem; margin-bottom: 8px; letter-spacing: -.01em; }
+    .feat p { font-size: .86rem; color: var(--muted); line-height: 1.72; }
+
+    /* ── ROUTES TABLE ── */
+    .routes-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 13px; margin-top: 50px; }
+    .route-card {
+      background: var(--bg2); border: 1px solid var(--b2); border-radius: 16px; padding: 18px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: border-color .2s, transform .2s;
+    }
+    .route-card:hover { border-color: var(--b1); transform: translateX(4px); }
+    .route-left { display: flex; align-items: center; gap: 12px; }
+    .route-icons { display: flex; }
+    .ri { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .8rem; overflow: hidden; }
+    .ri img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+    .ri:nth-child(2) { margin-left: -8px; border: 2px solid var(--bg2); }
+    .route-name { font-weight: 700; font-size: .93rem; }
+    .route-chain { font-family: var(--fm); font-size: .63rem; color: var(--muted); }
+    .route-vol { font-family: var(--fm); font-size: .76rem; color: var(--cyan); }
+
+    /* ── CHAINS BAND ── */
+    .chains-list { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 44px; }
+    .chain-pill {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--surface); border: 1px solid var(--b2); border-radius: 100px;
+      padding: 8px 18px; font-family: var(--fm); font-size: .74rem;
+      transition: border-color .2s, color .2s; cursor: default;
+    }
+    .chain-pill:hover { border-color: var(--cyan); color: var(--cyan); }
+    .cp-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── CTA BANNER ── */
+    .cta-inner {
+      background: linear-gradient(135deg, rgba(108,92,231,.07), rgba(0,229,201,.08), rgba(255,193,7,.04));
+      border: 1px solid var(--b1); border-radius: 28px; padding: 60px 56px;
+      display: flex; align-items: center; justify-content: space-between; gap: 40px;
+      position: relative; overflow: hidden;
+    }
+    .cta-inner::after {
+      content:''; position:absolute; right:-80px; top:-80px;
+      width:320px; height:320px; border-radius:50%;
+      background: radial-gradient(circle, rgba(108,92,231,.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-h { font-weight: 900; font-size: 2rem; letter-spacing: -.04em; margin-bottom: 10px; }
+    .cta-p { color: var(--muted); max-width: 420px; font-size: .95rem; }
+    .cta-btns { display: flex; flex-direction: column; gap: 12px; align-items: center; flex-shrink: 0; }
+
+    /* ── FAQ ── */
+    .faq-wrap { max-width: 820px; margin: 52px auto 0; }
+    .faq-item { border: 1px solid var(--b2); border-radius: var(--r); margin-bottom: 9px; overflow: hidden; }
+    .faq-item.open { border-color: rgba(108,92,231,.3); }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; cursor: pointer; background: var(--bg2); font-weight: 600; font-size: .95rem;
+      transition: background .2s;
+    }
+    .faq-q:hover { background: rgba(108,92,231,.04); }
+    .faq-ic {
+      width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--b2);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      font-size: 1rem; color: var(--cyan); transition: transform .3s;
+    }
+    .faq-item.open .faq-ic { transform: rotate(45deg); border-color: var(--cyan); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease; background: var(--bg3); }
+    .faq-a-inner { padding: 14px 22px 20px; color: var(--muted); font-size: .9rem; line-height: 1.78; }
+    .faq-item.open .faq-a { max-height: 400px; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--bg2); border-top: 1px solid var(--b2); padding: 60px 0 28px; }
+    .ft-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .ft-brand p { font-size: .86rem; color: var(--muted); margin-top: 14px; max-width: 270px; line-height: 1.72; }
+    .ft-col h5 { font-weight: 700; font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 16px; }
+    .ft-col a { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 10px; transition: color .2s; }
+    .ft-col a:hover { color: var(--cyan); }
+    .ft-bot {
+      border-top: 1px solid var(--b2); padding-top: 26px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: var(--fm); font-size: .68rem; color: var(--muted);
+    }
+    .ft-bot a:hover { color: var(--cyan); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.7)} }
+    @keyframes float-anim { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+    @keyframes ticker-run { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes fade-up { from{opacity:0;transform:translateY(26px)} to{opacity:1;transform:translateY(0)} }
+
+    .anim { animation: fade-up .75s ease both; }
+    .d1 { animation-delay:.12s } .d2 { animation-delay:.26s } .d3 { animation-delay:.4s }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:960px) {
+      .hero-inner { grid-template-columns:1fr; }
+      .defi-card { max-width:500px; }
+      .features-grid { grid-template-columns:1fr 1fr; }
+      .routes-grid { grid-template-columns:1fr; }
+      .ft-grid { grid-template-columns:1fr 1fr; }
+      .cta-inner { flex-direction:column; padding:36px 26px; }
+    }
+    @media(max-width:580px) {
+      .features-grid { grid-template-columns:1fr; }
+      nav { display:none; }
+      .stake-info-grid { grid-template-columns:1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="snow-canvas" aria-hidden="true"></canvas>
+<div class="xsudlmqvbag x2wl7trk bg-mesh" aria-hidden="true"></div>
+<div class="xsudlmqvbag x2wl7trk bg-lines" aria-hidden="true"></div>
+<div class="xsudlmqvbag x2wl7trk bg-hex" aria-hidden="true"></div>
+
+<!-- ═══ HEADER ═══ -->
+<header>
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk nav-row">
+      <a href="/" class="xsudlmqvbag x2wl7trk logo" aria-label="Enums Swap Home">
+        <svg class="xsudlmqvbag x2wl7trk logo-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="bg-g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#161a38"/>
+              <stop offset="1" stop-color="#080919"/>
+            </linearGradient>
+            <linearGradient id="ac-g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6c5ce7"/>
+              <stop offset="1" stop-color="#00e5c9"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="14" fill="url(#bg-g)"/>
+          <polygon points="32,8 56,21 56,43 32,56 8,43 8,21" fill="none" stroke="url(#ac-g)" stroke-width="2.5"/>
+          <path d="M24 20h17v5.4H29.6v5h10.6v5.2H29.6v6.2H41V47H24z" fill="url(#ac-g)"/>
+        </svg>
+        <span class="xsudlmqvbag x2wl7trk b">Enums</span><span class="xsudlmqvbag x2wl7trk s">Swap</span>
+      </a>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#swap">Swap</a>
+        <a href="#staking">Staking</a>
+        <a href="#routes">Routes</a>
+        <a href="#chains">Chains</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <button class="xsudlmqvbag x2wl7trk btn-connect" aria-label="Connect Wallet">Connect Wallet</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<main>
+<section class="xsudlmqvbag x2wl7trk hero" aria-labelledby="hero-h1" id="swap">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk hero-inner">
+
+      <!-- Left -->
+      <div class="xsudlmqvbag x2wl7trk anim">
+        <div class="xsudlmqvbag x2wl7trk hero-badge">Enums Swap — The DeFi Hub for TRON</div>
+        <h1 id="hero-h1">
+          Swap, Stake &amp;<br/>
+          Borrow on <span class="xsudlmqvbag x2wl7trk h-o">TRON</span><br/>
+          <span class="xsudlmqvbag x2wl7trk h-g">Instantly</span>
+        </h1>
+        <p>Enums Swap is a non-custodial DeFi platform on TRON — swap TRC-20 tokens, stake ENUM for yield, borrow against your collateral, and provide liquidity across 30+ networks with the best rates guaranteed.</p>
+
+        <div class="xsudlmqvbag x2wl7trk hero-btns">
+          <button class="xsudlmqvbag x2wl7trk btn-main" aria-label="Start swapping tokens">Start Swapping</button>
+          <button class="xsudlmqvbag x2wl7trk btn-ghost" aria-label="Stake ENUM tokens">Stake ENUM</button>
+        </div>
+
+        <div class="xsudlmqvbag x2wl7trk hero-kpis" role="list" aria-label="Enums Swap stats">
+          <div class="xsudlmqvbag x2wl7trk kpi" role="listitem"><div class="xsudlmqvbag x2wl7trk kpi-n">$2.3B+</div><div class="xsudlmqvbag x2wl7trk kpi-l">Total Volume</div></div>
+          <div class="xsudlmqvbag x2wl7trk kpi" role="listitem"><div class="xsudlmqvbag x2wl7trk kpi-n">30+</div><div class="xsudlmqvbag x2wl7trk kpi-l">Chains</div></div>
+          <div class="xsudlmqvbag x2wl7trk kpi" role="listitem"><div class="xsudlmqvbag x2wl7trk kpi-n">412K+</div><div class="xsudlmqvbag x2wl7trk kpi-l">Holders</div></div>
+          <div class="xsudlmqvbag x2wl7trk kpi" role="listitem"><div class="xsudlmqvbag x2wl7trk kpi-n">0.01%</div><div class="xsudlmqvbag x2wl7trk kpi-l">Min Fee</div></div>
+        </div>
+      </div>
+
+      <!-- Right — DeFi Widget -->
+      <div class="xsudlmqvbag x2wl7trk defi-card anim d2" aria-label="Enums Swap DeFi Interface">
+
+        <!-- Tab Nav -->
+        <div class="xsudlmqvbag x2wl7trk tab-nav" role="tablist" aria-label="DeFi actions">
+          <button class="xsudlmqvbag x2wl7trk tab-btn active" role="tab" aria-selected="true" data-tab="swap">
+            <span class="xsudlmqvbag x2wl7trk tab-dot"></span>Swap
+          </button>
+          <button class="xsudlmqvbag x2wl7trk tab-btn" role="tab" aria-selected="false" data-tab="borrow">
+            <span class="xsudlmqvbag x2wl7trk tab-dot"></span>Borrow
+          </button>
+          <button class="xsudlmqvbag x2wl7trk tab-btn" role="tab" aria-selected="false" data-tab="pool">
+            <span class="xsudlmqvbag x2wl7trk tab-dot"></span>Pool
+          </button>
+          <button class="xsudlmqvbag x2wl7trk tab-btn" role="tab" aria-selected="false" data-tab="staking">
+            <span class="xsudlmqvbag x2wl7trk tab-dot"></span>Staking
+          </button>
+          <button class="xsudlmqvbag x2wl7trk tab-btn" role="tab" aria-selected="false" data-tab="credit">
+            <span class="xsudlmqvbag x2wl7trk tab-dot"></span>Credit
+          </button>
+        </div>
+
+        <!-- ═ SWAP PANE ═ -->
+        <div class="xsudlmqvbag x2wl7trk tab-pane active" id="tab-swap" role="tabpanel">
+          <div class="xsudlmqvbag x2wl7trk sc-top">
+            <span class="xsudlmqvbag x2wl7trk sc-title">Swap Tokens</span>
+            <div class="xsudlmqvbag x2wl7trk sc-chain-pills" role="group" aria-label="Select chain">
+              <button class="xsudlmqvbag x2wl7trk cpl active" aria-pressed="true">TRON</button>
+              <button class="xsudlmqvbag x2wl7trk cpl" aria-pressed="false">ETH</button>
+              <button class="xsudlmqvbag x2wl7trk cpl" aria-pressed="false">BNB</button>
+              <button class="xsudlmqvbag x2wl7trk cpl" aria-pressed="false">All</button>
+            </div>
+          </div>
+
+          <!-- From -->
+          <div class="xsudlmqvbag x2wl7trk token-row">
+            <div class="xsudlmqvbag x2wl7trk tr-label">From</div>
+            <div class="xsudlmqvbag x2wl7trk tr-inner">
+              <div class="xsudlmqvbag x2wl7trk tok-select" role="button" tabindex="0" aria-label="Select source token">
+                <div class="xsudlmqvbag x2wl7trk tok-ico" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div>
+                <div class="xsudlmqvbag x2wl7trk tok-info">
+                  <div class="xsudlmqvbag x2wl7trk sym">ENUM</div>
+                  <div class="xsudlmqvbag x2wl7trk net">TRC-20</div>
+                </div>
+                <span class="xsudlmqvbag x2wl7trk tok-caret">▾</span>
+              </div>
+              <input class="xsudlmqvbag x2wl7trk tok-amount" type="text" placeholder="0" aria-label="Amount to swap" inputmode="decimal" />
+            </div>
+            <div class="xsudlmqvbag x2wl7trk tr-sub">
+              <span>≈ $0.00</span>
+              <span class="xsudlmqvbag x2wl7trk connect-notice">Connect wallet to see balance</span>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="xsudlmqvbag x2wl7trk sc-arrow">
+            <button class="xsudlmqvbag x2wl7trk sc-arrow-btn" aria-label="Switch swap direction">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14"/>
+                <polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 01-4 4H3"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- To -->
+          <div class="xsudlmqvbag x2wl7trk token-row">
+            <div class="xsudlmqvbag x2wl7trk tr-label">To</div>
+            <div class="xsudlmqvbag x2wl7trk tr-inner">
+              <div class="xsudlmqvbag x2wl7trk tok-select" role="button" tabindex="0" aria-label="Select destination token">
+                <div class="xsudlmqvbag x2wl7trk tok-ico" style="background:#e84142">T</div>
+                <div class="xsudlmqvbag x2wl7trk tok-info">
+                  <div class="xsudlmqvbag x2wl7trk sym">TRX</div>
+                  <div class="xsudlmqvbag x2wl7trk net">TRON</div>
+                </div>
+                <span class="xsudlmqvbag x2wl7trk tok-caret">▾</span>
+              </div>
+              <input class="xsudlmqvbag x2wl7trk tok-amount" type="text" placeholder="0" aria-label="Amount to receive" readonly />
+            </div>
+            <div class="xsudlmqvbag x2wl7trk tr-sub">
+              <span>≈ $0.00</span>
+              <span style="font-size:.62rem;color:var(--muted)">Connect wallet</span>
+            </div>
+          </div>
+
+          <!-- Info -->
+          <div class="xsudlmqvbag x2wl7trk sc-info">
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Exchange Rate</span><span class="xsudlmqvbag x2wl7trk v">— / —</span></div>
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Price Impact</span><span class="xsudlmqvbag x2wl7trk v">—</span></div>
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Route</span><span class="xsudlmqvbag x2wl7trk v">Connect wallet</span></div>
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Network Fee</span><span class="xsudlmqvbag x2wl7trk v">~$0.00</span></div>
+          </div>
+
+          <!-- Slippage -->
+          <div style="margin-top:11px">
+            <div style="font-family:var(--fm);font-size:.62rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:7px">Slippage Tolerance</div>
+            <div class="xsudlmqvbag x2wl7trk slippage-row" role="group" aria-label="Slippage tolerance">
+              <button class="xsudlmqvbag x2wl7trk slip-btn" aria-pressed="false">0.1%</button>
+              <button class="xsudlmqvbag x2wl7trk slip-btn active" aria-pressed="true">0.5%</button>
+              <button class="xsudlmqvbag x2wl7trk slip-btn" aria-pressed="false">1.0%</button>
+              <button class="xsudlmqvbag x2wl7trk slip-btn" aria-pressed="false">Auto</button>
+            </div>
+          </div>
+
+          <button class="xsudlmqvbag x2wl7trk btn-swap-now" aria-label="Connect wallet to swap">🔗 Connect Wallet to Swap</button>
+
+          <div class="xsudlmqvbag x2wl7trk sc-footer">
+            <span>MEV Protected</span>
+            <span>Non-Custodial</span>
+            <span>Best Rate</span>
+          </div>
+        </div>
+
+        <!-- ═ BORROW PANE ═ -->
+        <div class="xsudlmqvbag x2wl7trk tab-pane" id="tab-borrow" role="tabpanel">
+          <div class="xsudlmqvbag x2wl7trk sc-top">
+            <span class="xsudlmqvbag x2wl7trk sc-title">Borrow Assets</span>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk bridge-chain-row">
+            <div class="xsudlmqvbag x2wl7trk bridge-chain-sel" role="button" tabindex="0">
+              <div class="xsudlmqvbag x2wl7trk bcs-lbl">Collateral</div>
+              <div class="xsudlmqvbag x2wl7trk bcs-val"><span class="xsudlmqvbag x2wl7trk chain-dot" style="background:#6c5ce7"></span>ENUM ▾</div>
+            </div>
+            <button class="xsudlmqvbag x2wl7trk bridge-arrow-btn" aria-label="Switch borrow direction">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="xsudlmqvbag x2wl7trk bridge-chain-sel" role="button" tabindex="0">
+              <div class="xsudlmqvbag x2wl7trk bcs-lbl">Borrow Asset</div>
+              <div class="xsudlmqvbag x2wl7trk bcs-val"><span class="xsudlmqvbag x2wl7trk chain-dot" style="background:#26a17b"></span>USDT ▾</div>
+            </div>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk token-row">
+            <div class="xsudlmqvbag x2wl7trk tr-label">Borrow Amount</div>
+            <div class="xsudlmqvbag x2wl7trk tr-inner">
+              <div class="xsudlmqvbag x2wl7trk tok-select" role="button" tabindex="0">
+                <div class="xsudlmqvbag x2wl7trk tok-ico" style="background:#26a17b">₮</div>
+                <div class="xsudlmqvbag x2wl7trk tok-info"><div class="xsudlmqvbag x2wl7trk sym">USDT</div><div class="xsudlmqvbag x2wl7trk net">TRC-20</div></div>
+                <span class="xsudlmqvbag x2wl7trk tok-caret">▾</span>
+              </div>
+              <input class="xsudlmqvbag x2wl7trk tok-amount" type="text" placeholder="0" aria-label="Borrow amount" inputmode="decimal" />
+            </div>
+            <div class="xsudlmqvbag x2wl7trk tr-sub"><span>≈ $0.00</span><span class="xsudlmqvbag x2wl7trk connect-notice">Connect wallet</span></div>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk sc-info" style="margin-bottom:12px">
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Borrow APR</span><span class="xsudlmqvbag x2wl7trk v">—</span></div>
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Max LTV</span><span class="xsudlmqvbag x2wl7trk v">—</span></div>
+            <div class="xsudlmqvbag x2wl7trk sc-info-row"><span>Liquidation Price</span><span class="xsudlmqvbag x2wl7trk v">—</span></div>
+          </div>
+          <button class="xsudlmqvbag x2wl7trk btn-action-full" aria-label="Connect wallet to borrow">🔗 Connect Wallet to Borrow</button>
+          <div class="xsudlmqvbag x2wl7trk wallet-notice">Borrow limits and rates shown after wallet connection</div>
+        </div>
+
+        <!-- ═ POOL PANE ═ -->
+        <div class="xsudlmqvbag x2wl7trk tab-pane" id="tab-pool" role="tabpanel">
+          <div class="xsudlmqvbag x2wl7trk sc-top" style="margin-bottom:14px">
+            <span class="xsudlmqvbag x2wl7trk sc-title">Liquidity Pools</span>
+            <button class="xsudlmqvbag x2wl7trk slip-btn" style="padding:6px 14px">+ New Position</button>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk pool-list">
+            <div class="xsudlmqvbag x2wl7trk pool-item">
+              <div class="xsudlmqvbag x2wl7trk pool-left">
+                <div class="xsudlmqvbag x2wl7trk pool-icons">
+                  <div class="xsudlmqvbag x2wl7trk pi" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div>
+                  <div class="xsudlmqvbag x2wl7trk pi" style="background:#26a17b;border-color:var(--bg3)">₮</div>
+                </div>
+                <div>
+                  <div class="xsudlmqvbag x2wl7trk pool-name">ENUM / USDT</div>
+                  <div class="xsudlmqvbag x2wl7trk pool-tvl">TVL: —</div>
+                </div>
+              </div>
+              <div class="xsudlmqvbag x2wl7trk pool-apy">APY —</div>
+            </div>
+            <div class="xsudlmqvbag x2wl7trk pool-item">
+              <div class="xsudlmqvbag x2wl7trk pool-left">
+                <div class="xsudlmqvbag x2wl7trk pool-icons">
+                  <div class="xsudlmqvbag x2wl7trk pi" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div>
+                  <div class="xsudlmqvbag x2wl7trk pi" style="background:#e84142;border-color:var(--bg3);font-size:.65rem;font-weight:700;color:#fff">T</div>
+                </div>
+                <div>
+                  <div class="xsudlmqvbag x2wl7trk pool-name">ENUM / TRX</div>
+                  <div class="xsudlmqvbag x2wl7trk pool-tvl">TVL: —</div>
+                </div>
+              </div>
+              <div class="xsudlmqvbag x2wl7trk pool-apy">APY —</div>
+            </div>
+            <div class="xsudlmqvbag x2wl7trk pool-item">
+              <div class="xsudlmqvbag x2wl7trk pool-left">
+                <div class="xsudlmqvbag x2wl7trk pool-icons">
+                  <div class="xsudlmqvbag x2wl7trk pi" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div>
+                  <div class="xsudlmqvbag x2wl7trk pi" style="background:#627eea;border-color:var(--bg3);color:#fff;font-weight:900">Ξ</div>
+                </div>
+                <div>
+                  <div class="xsudlmqvbag x2wl7trk pool-name">ENUM / ETH</div>
+                  <div class="xsudlmqvbag x2wl7trk pool-tvl">TVL: —</div>
+                </div>
+              </div>
+              <div class="xsudlmqvbag x2wl7trk pool-apy">APY —</div>
+            </div>
+          </div>
+          <button class="xsudlmqvbag x2wl7trk btn-action-full" style="margin-top:14px" aria-label="Connect wallet for pools">🔗 Connect Wallet to Add Liquidity</button>
+          <div class="xsudlmqvbag x2wl7trk wallet-notice">Live TVL and APY shown after connection</div>
+        </div>
+
+        <!-- ═ STAKING PANE ═ -->
+        <div class="xsudlmqvbag x2wl7trk tab-pane" id="tab-staking" role="tabpanel">
+          <div class="xsudlmqvbag x2wl7trk sc-top" style="margin-bottom:14px">
+            <span class="xsudlmqvbag x2wl7trk sc-title">Stake ENUM</span>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk stake-info-grid">
+            <div class="xsudlmqvbag x2wl7trk stake-info-box"><div class="xsudlmqvbag x2wl7trk sib-val">—</div><div class="xsudlmqvbag x2wl7trk sib-lbl">APY</div></div>
+            <div class="xsudlmqvbag x2wl7trk stake-info-box"><div class="xsudlmqvbag x2wl7trk sib-val">—</div><div class="xsudlmqvbag x2wl7trk sib-lbl">Total Staked</div></div>
+            <div class="xsudlmqvbag x2wl7trk stake-info-box"><div class="xsudlmqvbag x2wl7trk sib-val">—</div><div class="xsudlmqvbag x2wl7trk sib-lbl">Your Stake</div></div>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk token-row">
+            <div class="xsudlmqvbag x2wl7trk tr-label">Stake Amount</div>
+            <div class="xsudlmqvbag x2wl7trk tr-inner">
+              <div class="xsudlmqvbag x2wl7trk tok-select" role="button" tabindex="0">
+                <div class="xsudlmqvbag x2wl7trk tok-ico" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div>
+                <div class="xsudlmqvbag x2wl7trk tok-info"><div class="xsudlmqvbag x2wl7trk sym">ENUM</div><div class="xsudlmqvbag x2wl7trk net">TRC-20</div></div>
+              </div>
+              <input class="xsudlmqvbag x2wl7trk tok-amount" type="text" placeholder="0" aria-label="Stake amount" inputmode="decimal" />
+            </div>
+            <div class="xsudlmqvbag x2wl7trk tr-sub"><span>≈ $0.00</span><span class="xsudlmqvbag x2wl7trk connect-notice">Connect wallet</span></div>
+          </div>
+          <div style="font-family:var(--fm);font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:10px 0 6px">Lock Period</div>
+          <div class="xsudlmqvbag x2wl7trk lock-options">
+            <button class="xsudlmqvbag x2wl7trk lock-btn active" aria-pressed="true">None<small>Base APY</small></button>
+            <button class="xsudlmqvbag x2wl7trk lock-btn" aria-pressed="false">30d<small>+Bonus</small></button>
+            <button class="xsudlmqvbag x2wl7trk lock-btn" aria-pressed="false">90d<small>+Bonus</small></button>
+            <button class="xsudlmqvbag x2wl7trk lock-btn" aria-pressed="false">365d<small>+Max</small></button>
+          </div>
+          <button class="xsudlmqvbag x2wl7trk btn-action-full" aria-label="Connect wallet to stake">🔗 Connect Wallet to Stake</button>
+          <div class="xsudlmqvbag x2wl7trk wallet-notice">APY and rewards shown after wallet connection</div>
+        </div>
+
+        <!-- ═ CREDIT PANE ═ -->
+        <div class="xsudlmqvbag x2wl7trk tab-pane" id="tab-credit" role="tabpanel">
+          <div class="xsudlmqvbag x2wl7trk sc-top" style="margin-bottom:14px">
+            <span class="xsudlmqvbag x2wl7trk sc-title">Enums Credit</span>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk credit-stats">
+            <div class="xsudlmqvbag x2wl7trk credit-stat"><div class="xsudlmqvbag x2wl7trk cs-val">—</div><div class="xsudlmqvbag x2wl7trk cs-lbl">Credit Limit</div></div>
+            <div class="xsudlmqvbag x2wl7trk credit-stat"><div class="xsudlmqvbag x2wl7trk cs-val">—</div><div class="xsudlmqvbag x2wl7trk cs-lbl">Health Factor</div></div>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk collateral-bar">
+            <div class="xsudlmqvbag x2wl7trk cbar-label"><span>Collateral Ratio</span><span style="color:var(--cyan)">— %</span></div>
+            <div class="xsudlmqvbag x2wl7trk cbar-track"><div class="xsudlmqvbag x2wl7trk cbar-fill"></div></div>
+          </div>
+          <div class="xsudlmqvbag x2wl7trk token-row" style="margin-bottom:10px">
+            <div class="xsudlmqvbag x2wl7trk tr-label">Collateral (ENUM)</div>
+            <div class="xsudlmqvbag x2wl7trk tr-inner">
+              <div class="xsudlmqvbag x2wl7trk tok-select" role="button" tabindex="0">
+                <div class="xsudlmqvbag x2wl7trk tok-ico" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div>
+                <div class="xsudlmqvbag x2wl7trk tok-info"><div class="xsudlmqvbag x2wl7trk sym">ENUM</div><div class="xsudlmqvbag x2wl7trk net">TRC-20</div></div>
+              </div>
+              <input class="xsudlmqvbag x2wl7trk tok-amount" type="text" placeholder="0" aria-label="Collateral amount" inputmode="decimal" />
+            </div>
+            <div class="xsudlmqvbag x2wl7trk tr-sub"><span>≈ $0.00</span><span class="xsudlmqvbag x2wl7trk connect-notice">Connect wallet</span></div>
+          </div>
+          <button class="xsudlmqvbag x2wl7trk btn-action-full" aria-label="Connect wallet for credit">🔗 Connect Wallet to Unlock Credit</button>
+          <div class="xsudlmqvbag x2wl7trk wallet-notice">Credit data and limits shown after wallet connection</div>
+        </div>
+
+      </div><!-- /defi-card -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="xsudlmqvbag x2wl7trk ticker-wrap" aria-hidden="true">
+  <div class="xsudlmqvbag x2wl7trk ticker-track">
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ENUM <span class="xsudlmqvbag x2wl7trk v">$0.084</span><span class="xsudlmqvbag x2wl7trk up">+4.2%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>TRX <span class="xsudlmqvbag x2wl7trk v">$0.1247</span><span class="xsudlmqvbag x2wl7trk up">+2.1%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>USDT (TRC20) <span class="xsudlmqvbag x2wl7trk v">$1.0001</span><span class="xsudlmqvbag x2wl7trk up">+0.01%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>24h Volume <span class="xsudlmqvbag x2wl7trk v">$61M</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ENUM Market Cap <span class="xsudlmqvbag x2wl7trk v">$340M</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>Holders <span class="xsudlmqvbag x2wl7trk v">412K+</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ENUM Staked <span class="xsudlmqvbag x2wl7trk v">—</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>Active Pools <span class="xsudlmqvbag x2wl7trk v">240+</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ETH <span class="xsudlmqvbag x2wl7trk v">$3,412</span><span class="xsudlmqvbag x2wl7trk up">+1.8%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>Swaps Today <span class="xsudlmqvbag x2wl7trk v">87K+</span></div>
+    <!-- dup for seamless loop -->
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ENUM <span class="xsudlmqvbag x2wl7trk v">$0.084</span><span class="xsudlmqvbag x2wl7trk up">+4.2%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>TRX <span class="xsudlmqvbag x2wl7trk v">$0.1247</span><span class="xsudlmqvbag x2wl7trk up">+2.1%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>USDT (TRC20) <span class="xsudlmqvbag x2wl7trk v">$1.0001</span><span class="xsudlmqvbag x2wl7trk up">+0.01%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>24h Volume <span class="xsudlmqvbag x2wl7trk v">$61M</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ENUM Market Cap <span class="xsudlmqvbag x2wl7trk v">$340M</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>Holders <span class="xsudlmqvbag x2wl7trk v">412K+</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ENUM Staked <span class="xsudlmqvbag x2wl7trk v">—</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>Active Pools <span class="xsudlmqvbag x2wl7trk v">240+</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>ETH <span class="xsudlmqvbag x2wl7trk v">$3,412</span><span class="xsudlmqvbag x2wl7trk up">+1.8%</span></div>
+    <div class="xsudlmqvbag x2wl7trk t-i"><span class="xsudlmqvbag x2wl7trk d"></span>Swaps Today <span class="xsudlmqvbag x2wl7trk v">87K+</span></div>
+  </div>
+</div>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="xsudlmqvbag x2wl7trk sec" id="features" aria-label="Enums Swap features">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk sec-center">
+      <div class="xsudlmqvbag x2wl7trk sec-lbl">Why Enums Swap</div>
+      <h2 class="xsudlmqvbag x2wl7trk sec-h">The Complete TRON<br/>DeFi Platform</h2>
+      <p class="xsudlmqvbag x2wl7trk sec-sub">Enums Swap combines best-rate swaps, ENUM staking rewards, on-chain borrowing, liquidity mining, and credit — all in one non-custodial interface on TRON.</p>
+    </div>
+    <div class="xsudlmqvbag x2wl7trk features-grid">
+      <article class="xsudlmqvbag x2wl7trk feat"><div class="xsudlmqvbag x2wl7trk feat-ico">🔀</div><h3>Enums Smart Swap</h3><p>Our aggregator queries 300+ DEX pools across TRON simultaneously, splitting your trade across optimal routes to minimize price impact on every swap.</p></article>
+      <article class="xsudlmqvbag x2wl7trk feat"><div class="xsudlmqvbag x2wl7trk feat-ico">💎</div><h3>ENUM Staking</h3><p>Earn passive yield by staking your ENUM tokens. Choose flexible staking or lock ENUM for boosted APY rewards. Rewards accrue in real time directly to your wallet.</p></article>
+      <article class="xsudlmqvbag x2wl7trk feat"><div class="xsudlmqvbag x2wl7trk feat-ico">🏦</div><h3>Enums Borrow</h3><p>Borrow stablecoins or other TRC-20 assets against your ENUM or TRX collateral, without selling your holdings. Transparent rates and instant on-chain settlement.</p></article>
+      <article class="xsudlmqvbag x2wl7trk feat"><div class="xsudlmqvbag x2wl7trk feat-ico">💧</div><h3>Liquidity Pools</h3><p>Provide liquidity and earn trading fee income. ENUM/USDT, ENUM/TRX, and ENUM/ETH pools offer some of the deepest liquidity in the Enums ecosystem.</p></article>
+      <article class="xsudlmqvbag x2wl7trk feat"><div class="xsudlmqvbag x2wl7trk feat-ico">💳</div><h3>Enums Credit</h3><p>Use your ENUM holdings as collateral to unlock a flexible on-chain credit line. Keep your upside exposure while accessing liquidity, powered by smart contracts.</p></article>
+      <article class="xsudlmqvbag x2wl7trk feat"><div class="xsudlmqvbag x2wl7trk feat-ico">🛡️</div><h3>MEV Protected</h3><p>Enums Swap routes all transactions through private mempools, eliminating front-running bots that steal value from ordinary swaps. Your trade executes at the quoted price.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TOP ROUTES ═══ -->
+<section class="xsudlmqvbag x2wl7trk sec" id="routes" aria-label="Top swap routes">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk sec-center">
+      <div class="xsudlmqvbag x2wl7trk sec-lbl">Top Routes</div>
+      <h2 class="xsudlmqvbag x2wl7trk sec-h">Most Popular<br/>Swap Pairs</h2>
+      <p class="xsudlmqvbag x2wl7trk sec-sub">Highest-volume token routes on Enums Swap across TRON and connected networks.</p>
+    </div>
+    <div class="xsudlmqvbag x2wl7trk routes-grid">
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div><div class="xsudlmqvbag x2wl7trk ri" style="background:#26a17b">₮</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">ENUM → USDT TRC20</div><div class="xsudlmqvbag x2wl7trk route-chain">TRON Network</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$22M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div><div class="xsudlmqvbag x2wl7trk ri" style="background:#e84142;color:#fff;font-weight:900;font-size:.7rem">T</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">ENUM → TRX</div><div class="xsudlmqvbag x2wl7trk route-chain">TRON Network</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$15M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:#26a17b">₮</div><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">USDT → ENUM</div><div class="xsudlmqvbag x2wl7trk route-chain">TRON Network</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$13M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:#627eea;color:#fff">Ξ</div><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">ETH → ENUM</div><div class="xsudlmqvbag x2wl7trk route-chain">ETH → TRON</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$9M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:#f0b90b;color:#000;font-weight:900">B</div><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">BNB → ENUM</div><div class="xsudlmqvbag x2wl7trk route-chain">BNB → TRON</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$6M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div><div class="xsudlmqvbag x2wl7trk ri" style="background:#627eea;color:#fff">Ξ</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">ENUM → ETH</div><div class="xsudlmqvbag x2wl7trk route-chain">TRON → ETH</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$5M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:#9945ff;color:#fff">S</div><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">SOL → ENUM</div><div class="xsudlmqvbag x2wl7trk route-chain">Solana → TRON</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$3M/day</div></div>
+      <div class="xsudlmqvbag x2wl7trk route-card"><div class="xsudlmqvbag x2wl7trk route-left"><div class="xsudlmqvbag x2wl7trk route-icons"><div class="xsudlmqvbag x2wl7trk ri" style="background:linear-gradient(135deg,#6c5ce7,#00e5c9);color:#fff;font-weight:900">E</div><div class="xsudlmqvbag x2wl7trk ri" style="background:#f7931a;color:#fff;font-weight:900">₿</div></div><div><div class="xsudlmqvbag x2wl7trk route-name">ENUM → WBTC</div><div class="xsudlmqvbag x2wl7trk route-chain">TRON → ETH</div></div></div><div class="xsudlmqvbag x2wl7trk route-vol">$2M/day</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHAINS ═══ -->
+<section class="xsudlmqvbag x2wl7trk sec sec-center" id="chains" aria-label="Supported blockchains">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk sec-lbl">Networks</div>
+    <h2 class="xsudlmqvbag x2wl7trk sec-h">30+ Chains,<br/>One Enums Interface</h2>
+    <div class="xsudlmqvbag x2wl7trk chains-list" role="list">
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#e84142"></span>TRON (TRX)</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#627eea"></span>Ethereum</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#f0b90b"></span>BNB Chain</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#8247e5"></span>Polygon</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#e84142"></span>Avalanche</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#28a0ef"></span>Arbitrum</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#ff0420"></span>Optimism</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#9945ff"></span>Solana</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#1969ff"></span>Fantom</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#0033ad"></span>zkSync Era</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#f7931a"></span>Bitcoin (via wrap)</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#00d395"></span>Celo</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#3ec300"></span>Cronos</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#00c2ff"></span>Cosmos</div>
+      <div class="xsudlmqvbag x2wl7trk chain-pill" role="listitem"><span class="xsudlmqvbag x2wl7trk cp-dot" style="background:#00e5c9"></span>+16 more</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="xsudlmqvbag x2wl7trk sec" aria-label="Start with Enums Swap">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk cta-inner">
+      <div>
+        <div class="xsudlmqvbag x2wl7trk sec-lbl">Get Started</div>
+        <h2 class="xsudlmqvbag x2wl7trk cta-h">Start Swapping &amp;<br/>Staking on TRON Today</h2>
+        <p class="xsudlmqvbag x2wl7trk cta-p">Connect your TronLink wallet and make your first swap in under 30 seconds. No account. No KYC. Best rate guaranteed on every trade.</p>
+      </div>
+      <div class="xsudlmqvbag x2wl7trk cta-btns">
+        <button class="xsudlmqvbag x2wl7trk btn-main" style="font-size:.9rem;padding:14px 34px" aria-label="Launch Enums Swap">🚀 Launch Enums Swap</button>
+        <button class="xsudlmqvbag x2wl7trk btn-ghost" style="font-size:.84rem;padding:12px 28px" aria-label="Stake ENUM">💎 Stake ENUM</button>
+        <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Non-custodial · MEV-protected · 30+ chains</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="xsudlmqvbag x2wl7trk sec" id="faq" aria-label="Enums Swap FAQ">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk sec-center">
+      <div class="xsudlmqvbag x2wl7trk sec-lbl">FAQ</div>
+      <h2 class="xsudlmqvbag x2wl7trk sec-h">ENUM &amp; Enums Swap<br/>— Answered</h2>
+      <p class="xsudlmqvbag x2wl7trk sec-sub">Everything you need to know about ENUM, TRON DeFi, swapping, staking, borrowing and using Enums Swap.</p>
+    </div>
+
+    <div class="xsudlmqvbag x2wl7trk faq-wrap" itemscope itemtype="https://schema.org/FAQPage">
+
+      <!-- Q1 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Enums Swap is a non-custodial DeFi platform built on TRON. It combines best-rate token swapping, ENUM staking for yield, on-chain borrowing, liquidity pool provision, and credit — all in one interface, with no KYC or account registration required.</div></div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is ENUM token?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">ENUM is the native TRC-20 utility and governance token of the Enums Swap ecosystem on TRON. It is used to pay reduced protocol fees, participate in staking rewards, serve as collateral for borrowing and credit, and take part in governance votes on protocol parameters.</div></div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How do I swap tokens on Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Connect your TronLink wallet by clicking "Connect Wallet" in the top right. Select your input and output token in the Swap widget. Enter your desired amount, review the quoted rate, price impact, and route. Click "Swap Now" and approve the transaction in your wallet. TRON finality is under 3 seconds, so your swapped tokens arrive almost instantly.</div></div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How do I stake ENUM on Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Navigate to the Staking tab in the Enums Swap widget or click "Stake ENUM" in the header. Connect your wallet, enter the amount you want to stake, and select a lock period — flexible, 30 days, 90 days, or 365 days. Longer locks earn higher APY bonuses. Confirm the transaction in TronLink and your staking position activates immediately, with rewards accruing in real time.</div></div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What APY can I earn staking ENUM?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">ENUM staking APY is dynamic and depends on the total amount staked in the protocol, your chosen lock period, and current market conditions. Flexible staking earns the base APY, while longer lock periods earn bonus multipliers. Exact APY figures are displayed live in the Staking panel after connecting your wallet, and rewards are distributed in ENUM.</div></div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How does borrowing work on Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Open the Borrow tab, deposit ENUM, TRX, or another supported asset as collateral, and choose an asset to borrow such as USDT. The interface shows your maximum loan-to-value ratio, borrow APR, and liquidation price before you confirm. Once approved, the borrowed asset is sent directly to your wallet, and you can repay at any time to release your collateral.</div></div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is the difference between Borrow and Credit on Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Borrow lets you take out a single fixed loan against deposited collateral, typically used for a specific borrowing need. Credit opens a revolving line backed by your ENUM holdings, which you can draw down and repay repeatedly without opening a new position each time. Both use the same collateral health-factor monitoring to protect against liquidation.</div></div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Can I provide liquidity with ENUM on Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Yes. The Pool tab lets you add liquidity to ENUM trading pairs including ENUM/USDT, ENUM/TRX, and ENUM/ETH. As a liquidity provider, you earn a proportional share of all trading fees generated by that pool, in addition to any liquidity mining incentives. You receive LP tokens representing your position, which can be staked for additional ENUM rewards in supported incentive programs.</div></div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What wallets are supported by Enums Swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Enums Swap supports TronLink (recommended for swaps on TRON), MetaMask, Trust Wallet, WalletConnect (200+ compatible wallets), Coinbase Wallet, Ledger hardware wallet, Trezor, and Phantom. For swaps on TRON, TronLink is the most seamless option. For cross-chain operations involving ETH or BNB Chain, any EVM-compatible wallet works alongside the Enums Swap interface.</div></div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What fees does Enums Swap charge?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Enums Swap charges a protocol fee starting at 0.01% of swap value — among the lowest in the TRON DeFi ecosystem. You also pay the underlying TRON network gas fee, which is typically under $0.01 per transaction. The full price displayed in your quote is all-inclusive, so there are no hidden fees. What you see is exactly what you receive.</div></div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Is Enums Swap safe? Is it audited?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Enums Swap is fully non-custodial — your tokens remain in your wallet until the moment a swap executes atomically on-chain. Smart contracts are audited by leading security firms. MEV protection shields every swap from front-running bots. If a cross-chain operation cannot complete for any reason, your funds are automatically returned to your originating wallet. No private keys are ever required by Enums Swap.</div></div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How are staking rewards calculated?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">ENUM staking on Enums Swap means depositing your tokens into a staking smart contract in exchange for yield rewards. Rewards are calculated based on: (1) your share of the total ENUM staked pool, (2) the protocol's reward emission rate, and (3) any lock-period bonus multiplier you've activated. Rewards are distributed continuously and can be claimed or compounded at any time through the Enums Swap interface.</div></div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Can I unstake ENUM early?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Flexible staking (no lock period) allows you to unstake ENUM at any time with no penalty. For locked positions (30d, 90d, 365d), early withdrawal may incur a penalty fee, which is redirected to remaining stakers as a bonus. The exact early unstake penalty percentage is shown in your staking dashboard. After the lock period expires, you can withdraw your ENUM and accrued rewards freely.</div></div>
+      </div>
+
+      <!-- Q14 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is the total supply of ENUM?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">ENUM has a fixed total supply of 1,000,000,000 (1 billion) TRC-20 tokens. A portion is allocated to liquidity incentives, staking rewards, the protocol treasury, and the founding team under a multi-year vesting schedule. The exact circulating supply and current emission schedule are published in the Enums Swap documentation and updated as new tranches unlock.</div></div>
+      </div>
+
+      <!-- Q15 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How fast are swaps on TRON?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Swaps on the TRON network finalize in under 3 seconds thanks to TRON's delegated proof-of-stake (DPoS) consensus mechanism. This makes Enums Swap one of the fastest DEX experiences available — far faster than Ethereum-based swaps which take 12–60 seconds or more. For cross-chain bridge operations, finality depends on the destination chain and typically completes within 1–5 minutes.</div></div>
+      </div>
+
+      <!-- Q16 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is slippage and how should I set it?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Slippage is the maximum acceptable difference between the quoted price and the actual executed price, caused by market movement between the moment you request a quote and when the transaction confirms on-chain. For most stable pairs on TRON, 0.1%–0.5% is sufficient. For large trades or volatile tokens, use 1%. Enums Swap's "Auto" mode dynamically sets the optimal slippage for each pair based on historical volatility.</div></div>
+      </div>
+
+      <!-- Q17 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Does Enums Swap require KYC or account registration?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">No. Enums Swap is completely permissionless — you never need to create an account, provide an email address, or complete KYC identity verification of any kind. Simply connect a compatible wallet (TronLink on TRON, or MetaMask for cross-chain swaps) and you're ready to trade instantly. Your wallet address is your identity on Enums Swap.</div></div>
+      </div>
+
+      <!-- Q18 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How does MEV protection work?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">MEV (Maximal Extractable Value) bots monitor public mempools and front-run swap transactions, buying a token before your trade and selling it to you at an inflated price. Enums Swap routes all swap transactions through private relay mempools where bots cannot detect or front-run them. This protection saves users on average $10–$70 on large trades and ensures you always receive the price quoted — not the price after a bot has skimmed your transaction.</div></div>
+      </div>
+
+      <!-- Q19 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How does Enums Swap find the best swap rate?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">The routing engine simultaneously queries 300+ DEX pools on TRON — including SunSwap, JustSwap, and dozens of smaller AMMs — and uses a pathfinding algorithm to split your order optimally across multiple pools. This minimizes price impact and maximizes the output token amount. Quotes refresh every 5 seconds to ensure you always act on accurate, real-time pricing.</div></div>
+      </div>
+
+      <!-- Q20 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What are the risks of providing liquidity?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">The primary risk of liquidity provision is impermanent loss (IL) — a temporary loss that occurs when the price ratio between the two pooled tokens changes significantly from when you deposited. If one asset's price rises sharply, you earn less appreciation than simply holding. However, trading fee income can offset or exceed IL over time. Enums Swap displays an IL estimator in the Pool dashboard to help you evaluate this tradeoff.</div></div>
+      </div>
+
+      <!-- Q21 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is the ENUM/USDT liquidity pool?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">The ENUM/USDT pool is the highest-volume trading pair on Enums Swap, facilitating most ENUM-to-stablecoin conversions and vice versa. Liquidity providers deposit equal USD-value amounts of ENUM and USDT (TRC-20) into the pool and receive ENUM/USDT LP tokens in return. These LP tokens represent your share of the pool and earn trading fees automatically, and can also be staked in Enums Swap incentive vaults for additional ENUM rewards.</div></div>
+      </div>
+
+      <!-- Q22 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Can I get a preview swap quote without connecting a wallet?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">You can enter amounts and preview route breakdowns in the Enums Swap widget without connecting a wallet. Rate quotes and price impact estimates are visible immediately. Your wallet balance is not shown until you connect, and you cannot execute a swap without a wallet connection — but you can research and plan your trade fully before committing to a wallet connection.</div></div>
+      </div>
+
+      <!-- Q23 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What is price impact in a swap?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Price impact is the percentage difference between the mid-market price and the actual price you receive on your swap, caused by your trade moving the pool's price curve. Small swaps relative to pool size have negligible price impact. Large trades in shallow pools can have significant price impact (1–5%+). Enums Swap's smart routing splits large orders across multiple pools to minimize price impact, displaying the estimated impact clearly before you confirm.</div></div>
+      </div>
+
+      <!-- Q24 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Is Enums Swap available on mobile?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Yes. Enums Swap is a fully responsive web application accessible on any device — desktop, tablet, or smartphone. For mobile swaps on TRON, use the TronLink mobile app's built-in dApp browser to access enums-swap.vercel.app directly. For EVM chains on mobile, MetaMask Mobile or Trust Wallet's dApp browser work seamlessly with the Enums Swap interface.</div></div>
+      </div>
+
+      <!-- Q25 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How do I claim my ENUM staking rewards?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Staking rewards accrue continuously in your staking dashboard. To claim them, navigate to the Staking tab in Enums Swap, connect your wallet, and click "Claim Rewards." Confirm the transaction in TronLink and your earned ENUM transfers to your wallet immediately. You can also choose to auto-compound your rewards — re-staking them instantly to maximize your yield position without a separate transaction.</div></div>
+      </div>
+
+      <!-- Q26 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">What happens if my borrow position is liquidated?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">If your collateral value drops below the liquidation threshold defined by your position's health factor, the protocol automatically sells a portion of your collateral to repay the outstanding loan plus a liquidation fee. You can avoid liquidation by adding more collateral or repaying part of your loan whenever your health factor approaches the warning threshold shown in the Borrow and Credit dashboards.</div></div>
+      </div>
+
+      <!-- Q27 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How does Enums Swap handle failed transactions?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">If a swap transaction fails — due to slippage exceeding your tolerance, insufficient gas, or a network issue — your tokens remain safely in your wallet. Nothing is lost. The transaction simply doesn't execute, and Enums Swap displays an error message explaining the cause. For cross-chain operations that fail mid-way, funds are automatically returned to the source chain wallet via the protocol's rollback mechanism, typically within minutes.</div></div>
+      </div>
+
+      <!-- Q28 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Can I swap to stablecoins directly?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Yes. Enums Swap supports direct token-to-stablecoin swaps including ENUM → USDT (TRC-20), ENUM → USDC, and ENUM → TUSD. These are the most liquid pairs on TRON and typically have the lowest slippage and best price impact. The ENUM/USDT pair on TRON is the dominant liquidity venue, with millions of dollars in daily trading volume routed through Enums Swap.</div></div>
+      </div>
+
+      <!-- Q29 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">How do I get TRX to pay gas fees for swaps?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">TRON transactions require a small amount of TRX for network energy and bandwidth fees, which are extremely cheap — typically under $0.01 per swap. You can acquire TRX from any major centralized exchange (Binance, OKX, Kraken) and withdraw it directly to your TronLink wallet address. Once you have a small TRX balance (5–20 TRX is enough for many transactions), you're ready to use Enums Swap without interruption.</div></div>
+      </div>
+
+      <!-- Q30 -->
+      <div class="xsudlmqvbag x2wl7trk faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="xsudlmqvbag x2wl7trk faq-q" tabindex="0" role="button" aria-expanded="false"><span itemprop="name">Does Enums Swap support cross-chain bridging?</span><span class="xsudlmqvbag x2wl7trk faq-ic">+</span></div>
+        <div class="xsudlmqvbag x2wl7trk faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div class="xsudlmqvbag x2wl7trk faq-a-inner" itemprop="text">Enums Swap integrates with established cross-chain bridge infrastructure, allowing ENUM and other TRC-20 tokens to move between TRON and 30+ networks including Ethereum, BNB Chain, Polygon, and Arbitrum. Bridging is accessible from the chain selector in the Swap widget — choose a non-TRON destination and the interface automatically routes your transaction through the appropriate bridge protocol.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="xsudlmqvbag x2wl7trk wrap">
+    <div class="xsudlmqvbag x2wl7trk ft-grid">
+      <div class="xsudlmqvbag x2wl7trk ft-brand">
+        <a href="/" class="xsudlmqvbag x2wl7trk logo" aria-label="Enums Swap">
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="bg-g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#161a38"/><stop offset="1" stop-color="#080919"/></linearGradient>
+              <linearGradient id="ac-g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6c5ce7"/><stop offset="1" stop-color="#00e5c9"/></linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="14" fill="url(#bg-g2)"/>
+            <polygon points="32,8 56,21 56,43 32,56 8,43 8,21" fill="none" stroke="url(#ac-g2)" stroke-width="2.5"/>
+            <path d="M24 20h17v5.4H29.6v5h10.6v5.2H29.6v6.2H41V47H24z" fill="url(#ac-g2)"/>
+          </svg>
+          <span class="xsudlmqvbag x2wl7trk b">Enums</span><span class="xsudlmqvbag x2wl7trk s">Swap</span>
+        </a>
+        <p>The non-custodial DeFi hub for TRON. Swap, stake, borrow, pool, and earn with ENUM. MEV-protected · Best-rate · Instant · No KYC.</p>
+      </div>
+      <div class="xsudlmqvbag x2wl7trk ft-col">
+        <h5>Enums Swap</h5>
+        <a href="#swap">Swap Tokens</a>
+        <a href="#staking">Stake ENUM</a>
+        <a href="#routes">Top Routes</a>
+        <a href="#chains">All Chains</a>
+        <a href="#">ENUM Pools</a>
+      </div>
+      <div class="xsudlmqvbag x2wl7trk ft-col">
+        <h5>Resources</h5>
+        <a href="#">Documentation</a>
+        <a href="#">API Reference</a>
+        <a href="#">Smart Contracts</a>
+        <a href="#">Security Audit</a>
+        <a href="#">Bug Bounty</a>
+      </div>
+      <div class="xsudlmqvbag x2wl7trk ft-col">
+        <h5>Community</h5>
+        <a href="#">Twitter / X</a>
+        <a href="#">Telegram</a>
+        <a href="#">Discord</a>
+        <a href="#">GitHub</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+    <div class="xsudlmqvbag x2wl7trk ft-bot">
+      <span>© 2025 Enums Swap · enums-swap.vercel.app. All rights reserved.</span>
+      <div style="display:flex;gap:22px"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ SCRIPTS ═══ -->
+<script>
+  /* Tab switching */
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tabId = this.dataset.tab;
+      document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      this.classList.add('active'); this.setAttribute('aria-selected','true');
+      const pane = document.getElementById('tab-' + tabId);
+      if (pane) pane.classList.add('active');
+    });
+  });
+
+  /* Chain pill toggle */
+  document.querySelectorAll('.cpl').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.cpl').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      this.classList.add('active'); this.setAttribute('aria-pressed','true');
+    });
+  });
+
+  /* Slippage toggle */
+  document.querySelectorAll('.slip-btn[aria-pressed]').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const group = this.closest('.slippage-row');
+      if (group) {
+        group.querySelectorAll('.slip-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      }
+      this.classList.add('active'); this.setAttribute('aria-pressed','true');
+    });
+  });
+
+  /* Lock period toggle */
+  document.querySelectorAll('.lock-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.lock-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      this.classList.add('active'); this.setAttribute('aria-pressed','true');
+    });
+  });
+
+  /* Borrow direction flip */
+  document.querySelectorAll('.bridge-arrow-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const row = this.parentElement;
+      const sels = row.querySelectorAll('.bridge-chain-sel');
+      if (sels.length >= 2) {
+        const aHTML = sels[0].innerHTML;
+        sels[0].innerHTML = sels[1].innerHTML;
+        sels[1].innerHTML = aHTML;
+      }
+    });
+  });
+
+  /* Swap arrow flip */
+  document.querySelectorAll('.sc-arrow-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = this.closest('.tab-pane');
+      const rows = card.querySelectorAll('.token-row');
+      if (rows.length >= 2) {
+        const firstTok = rows[0].querySelector('.tok-select').innerHTML;
+        const secondTok = rows[1].querySelector('.tok-select').innerHTML;
+        rows[0].querySelector('.tok-select').innerHTML = secondTok;
+        rows[1].querySelector('.tok-select').innerHTML = firstTok;
+      }
+    });
+  });
+
+  /* Ambient particles */
+  (function(){
+    const c = document.getElementById('snow-canvas');
+    const x = c.getContext('2d');
+    let W, H, fl = [];
+    function resize(){ W = c.width = window.innerWidth; H = c.height = window.innerHeight; }
+    resize(); window.addEventListener('resize', resize);
+    for(let i=0;i<120;i++) fl.push({x:Math.random()*1600,y:Math.random()*900,r:Math.random()*2.2+0.4,d:Math.random()*1.2+0.3,o:Math.random()*.35+.08,s:Math.random()*.4-.2});
+    function draw(){
+      x.clearRect(0,0,W,H);
+      fl.forEach(f=>{
+        x.beginPath(); x.arc(f.x,f.y,f.r,0,Math.PI*2);
+        x.fillStyle=`rgba(140,150,255,${f.o})`; x.fill();
+      });
+    }
+    function upd(){ fl.forEach(f=>{ f.y+=f.d; f.x+=f.s; if(f.y>H+5){f.y=-5;f.x=Math.random()*W;} if(f.x>W+5)f.x=-5; if(f.x<-5)f.x=W+5; }); }
+    function loop(){ draw(); upd(); requestAnimationFrame(loop); } loop();
+  })();
+
+  /* Scroll reveal */
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; obs.unobserve(e.target); } });
+  },{threshold:.1});
+  document.querySelectorAll('.feat,.route-card,.chain-pill,.kpi,.pool-item').forEach(el=>{
+    el.style.opacity='0'; el.style.transform='translateY(22px)';
+    el.style.transition='opacity .55s ease, transform .55s ease'; obs.observe(el);
+  });
+</script>
+
+<script src="./faq.js" type="module"></script>
+</body>
+</html>
